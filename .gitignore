@@ -1,5 +1,8 @@
 .venv/
+.venev/
 __pycache__/
 *.pyc
+credentials.json
+token.json
 .env
-data/*.db
+data/

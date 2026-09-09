@@ -85,7 +85,7 @@ def create_email(
 
     cursor.execute(
         """
-        INSERT INTO emails (
+        INSERT OR IGNORE INTO emails (
             user_id,
             message_id,
             sender,
@@ -136,5 +136,3 @@ def get_emails_for_user(user_id):
 
     return emails    
 
-    connection.commit()
-    connection.close()
